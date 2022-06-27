@@ -2580,6 +2580,7 @@ ul {
   position: relative;
   display: block;
   margin-bottom: 30px;
+  width:590px;
 }
 
 @media(min-width: 1200px) {
@@ -2595,22 +2596,31 @@ ul {
 .two-boxes__content {
   position: relative;
   display: block;
-  background: var(--thm-black);
-  padding: 80.5px 48px;
+  width: 342px;
+	height: 288px;
+  background: url(../images/resources/learn-more.png) no-repeat;
+  z-index: 1;
 }
 
-.two-boxes__content h2 {
-  font-size: 28px;
-  color: #ffffff;
-  font-weight: 700;
-  line-height: 40px;
-  text-transform: uppercase;
+
+.two-boxes__content p {
+  font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 1px;
+	color: #fccfa2;
+  margin-left:67px;
+}
+.two-boxes__content p:first-child{
+  padding-top:70px;
 }
 
 .two-boxes__img {
   position: relative;
   display: block;
   overflow: hidden;
+  width: 245px;
+  height: 287px;
+  margin-left:47px;
 }
 
 .two-boxes__img>img {
@@ -2642,6 +2652,18 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+.towbox_link{
+  position:absolute;
+  font-size: 12px;
+  line-height: 18px;
+  color: #052925;
+  top:120px;
+  left:46px
+}
+.towbox_link a{
+  color: #052925;
+  text-decoration: underline;
+}
 
 .services-one .section-title {
   position: relative;
@@ -2665,7 +2687,7 @@ ul {
 }
 
 .services-one__single:hover {
-  background-color: var(--thm-black);
+  background-color: #0e4741;
 }
 
 .services-one__title {
@@ -2682,7 +2704,7 @@ ul {
 }
 
 .services-one__single:hover .services-one__title a {
-  color: #ffffff;
+  color: #fccfa2;
 }
 
 .services-one__title a:hover {
@@ -2715,7 +2737,7 @@ ul {
 }
 
 .services-one__single:hover .services-one__btn {
-  color: #ffffff;
+  color: #fccfa2;
 }
 
 .services-one__single .services-one__btn:hover {
@@ -2735,7 +2757,7 @@ ul {
 }
 
 .services-one__single:hover .services-one__btn:before {
-  background-color: var(--thm-primary);
+  background-color: #133733;
   opacity: 0.4;
 }
 
