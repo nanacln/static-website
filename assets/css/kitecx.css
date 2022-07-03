@@ -1904,9 +1904,9 @@ ul {
   color: #fff;
 }
 
-.main-slider .swiper-slide-active .image-layer {
+/* .main-slider .swiper-slide-active .image-layer {
   transform: scale(1.15);
-}
+} */
 
 .main-slider .swiper-slide-active .thm-btn,
 .main-slider .swiper-slide-active p,
