@@ -1762,21 +1762,21 @@ ul {
 }
 
 .main-slider .image-layer-overlay {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   content: "";
   background: rgba(var(--thm-black-rgb), .7);
-  z-index: 2;
+  z-index: 2; */
 }
 
 
 
 .main-slider .container {
   padding-bottom: 190px;
-  padding-top: 196px;
+  padding-top: 300px;
 }
 
 .main-slider__content {
@@ -1799,14 +1799,55 @@ ul {
   /* text-transform: uppercase; */
 }
 
-.main-slider h2.one {
-  font-size: 75px;
+.main-slider h2.slider-box {
+  font-size: 40px;
   height: 431px;
 }
-
-.main-slider h2.one .item3 {
-  font-size: 40px;
+.slider-box .item1{
+  position:relative
 }
+.slider-box .item1,.slider-box .item2{
+  margin-left: 27px;
+  line-height: 50px;
+}
+.slider-box .item3{
+  text-align: right;
+  font-size: 90px;
+  margin-top: 66px;
+  line-height: 1;
+}
+.slider-box .desc{
+  text-align: right;
+  font-size: 24px;
+  margin-top: 12px;
+  line-height: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  letter-spacing: 1em;
+}
+.slider-box .desc.no{
+  letter-spacing: 2px;
+}
+.slider-box .desc:after{
+  content:'';
+  width: 7px;
+	height: 24px;
+	background-color: #ffffff;
+  display: block;
+  margin-right: 16px;
+}
+.slider-box .item1:before{
+  position: absolute;
+  margin-left: -27px;
+  content:'';
+  width: 7px;
+	height: 84px;
+	background-color: #ffffff;
+  display: block;
+  margin-top: 6px;
+}
+
+
 
 .main-slider h2.two {
   font-size: 75px;
@@ -1872,7 +1913,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   z-index: 100;
   transform: translateY(-50%) translateX(-50%);
@@ -2760,7 +2801,24 @@ ul {
   background-color: #133733;
   opacity: 0.4;
 }
-
+.icon-f1{
+  background:url(../images/resources/icon1.png)
+}
+.icon-f2{
+  background:url(../images/resources/icon2.png)
+}
+.icon-f3{
+  background:url(../images/resources/icon3.png)
+}
+.services-one__single:hover .icon-f1{
+  background:url(../images/resources/icon1-w.png)
+}
+.services-one__single:hover .icon-f2{
+  background:url(../images/resources/icon2-w.png)
+}
+.services-one__single:hover .icon-f3{
+  background:url(../images/resources/icon3-w.png)
+}
 .services-one__icon {
   position: absolute;
   right: 58px;
@@ -2768,9 +2826,13 @@ ul {
 }
 
 .services-one__icon span {
-  font-size: 65px;
+  /* font-size: 65px;
   line-height: 65px;
-  color: var(--thm-black);
+  color: var(--thm-black); */
+  width:80px;
+  height: 70px;
+  display: block;
+  background-size: 100% 100%;
   transition: all 500ms ease;
 }
 
