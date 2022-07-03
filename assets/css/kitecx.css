@@ -3008,6 +3008,21 @@ ul {
   background:#fff;
   
 }
+@media (max-width: 1199px){
+  .hb-box{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .page-wrapper .hb-box:before{
+    display: none;
+    max-width: 100%;
+  }
+  .hb-img{
+    margin-bottom:20px;
+  }
+}
+
 .hb-box:before{
   content:'';
   position:absolute;
@@ -3023,8 +3038,11 @@ ul {
   background-size: 100%;
 }
 .hb-img{
-  width: 597px;
-	height: 348px;
+  max-width: 597px;
+	max-height: 348px;
+}
+.hb-img img{
+  width: 100%;
 }
 .hb-container{
   width:100%;
