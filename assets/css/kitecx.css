@@ -2967,18 +2967,39 @@ ul {
 
 .testimonials-one__carousel.owl-carousel .owl-dots .owl-dot:before {
   position: absolute;
+  left:0;
   height: 30px;
   width: 20px;
   text-align: center;
-  color: #000;
+  color: #bfbfbf;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 20px;
   font-weight: 500;
-  border-bottom: 2px solid var(--thm-black);
+  border-bottom: 6px solid #bfbfbf;
   counter-increment: count;
-  content: "0"counter(count);
+  content: "0"counter(count) ;
+  white-space: nowrap;
+  overflow: hidden;
   transition: all 200ms linear;
   transition-delay: 0.1s;
+}
+.testimonials-one__carousel.owl-carousel .owl-dots .owl-dot.active{
+  width:195px;
+}
+.testimonials-one__carousel.owl-carousel .owl-dots .owl-dot.active:before{
+  border-bottom:7px solid #0e4741;
+  width:195px;
+  color:#0e4741;
+  font-size: 18px;
+}
+.testimonials-one__carousel.owl-carousel .owl-dots .owl-dot:first-child.active:before{
+  content:'01 自然的建筑精神'
+}
+.testimonials-one__carousel.owl-carousel .owl-dots .owl-dot:nth-child(2).active:before{
+  content:'02 自然的生活方式'
+}
+.testimonials-one__carousel.owl-carousel .owl-dots .owl-dot:nth-child(3).active:before{
+  content:'03 自然的人生境界'
 }
 
 .testimonials-one__carousel.owl-carousel .owl-dot span {
@@ -3000,10 +3021,52 @@ ul {
 .testimonials-one__box {
   position: relative;
   display: block;
-  background: #ffffff;
+  background:url(../images/resources/life-1.jpg) no-repeat;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, .07);
+}
+.testimonials-one__box.child2{
+  background-image:url(../images/resources/life-2.jpg)
+}
+.testimonials-one__box.child3{
+  background-image:url(../images/resources/life-3.jpg)
+}
+.testimonials-one__box.child4{
+  background-image:url(../images/resources/life-4.jpg)
+}
+.testimonials-one__box.child5{
+  background-image:url(../images/resources/life-5.jpg)
+}
+.testimonials-one__box.child6{
+  background-image:url(../images/resources/life-6.jpg)
+}
+.testimonials-one__box.child7{
+  background-image:url(../images/resources/life-7.jpg)
+}
+.testimonials-one__box.child8{
+  background-image:url(../images/resources/life-8.jpg)
+}
+.testimonials-one__box.child9{
+  background-image:url(../images/resources/life-9.jpg)
+}
+.testimonials-one__text{
+  color:#fff;
+  text-align: left;
+}
+.testimonials-one__text h4{
+  font-size: 24px;
+  color:#fff;
+  display: flex;
+  align-items: center;
+}
+.testimonials-one__text h4:before{
+  content:'';
+  width: 3px;
+	height: 22px;
+	background-color: #ffffff;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .testimonials-one__box:before {
@@ -3026,19 +3089,19 @@ ul {
 }
 
 .testimonials-one__box:hover:before {
-  height: 100%;
-  opacity: 1;
+  /* height: 100%;
+  opacity: 1; */
 }
 
 .testimonials-one__single {
   position: relative;
   display: block;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
 .testimonials-one__content {
   position: relative;
-  padding-top: 55px;
+  padding-top: 90px;
   padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 50px;
@@ -3048,10 +3111,10 @@ ul {
 
 .testimonials-one__content .testimonials-one__text {
   height: 300px;
-  display: inline-flex;
+  /* display: inline-flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  text-align: center;
+  text-align: center; */
   font-size: 14px;
 }
 
@@ -3063,7 +3126,12 @@ ul {
 .testimonials-one__text {
   font-size: 20px;
   margin: 0;
-  line-height: 36px;
+  line-height: 30px;
+  
+}
+.testimonials-one__text span{
+  margin-top:6px;
+  display: block;
 }
 
 .testimonials-one__client-info {
