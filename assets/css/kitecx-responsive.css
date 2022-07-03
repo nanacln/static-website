@@ -1431,10 +1431,9 @@
         padding-left: 200px;
     }
 
-    .main-menu .main-menu__list>li+li,
-    .stricky-header .main-menu__list>li+li {
+    /* .stricky-header .main-menu__list>li+li {
         margin-left: 40px;
-    }
+    } */
 
     .main-menu__right {
         padding-left: 10px;
